@@ -1,0 +1,5 @@
+---
+applications:
+  - name: pcc-learning-userstatus
+    path: ./build/libs/demo-1.0.0-M1.jar
+    services: [userstatus-cluster]
