@@ -23,7 +23,6 @@ import org.springframework.data.gemfire.config.annotation.*;
 @Configuration
 @EnablePdx
 @EnableEntityDefinedRegions(basePackageClasses = UserStatus.class)
-@EnableClusterConfiguration(useHttp = true)
 @EnableManager(start = true)
 public class GeodeConfiguration {
 }
