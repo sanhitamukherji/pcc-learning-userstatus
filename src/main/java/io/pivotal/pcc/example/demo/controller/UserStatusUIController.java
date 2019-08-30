@@ -45,7 +45,7 @@ public class UserStatusUIController {
     this.userStatusService = userStatusService;
   }
 
-  @CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+  @CrossOrigin
   @GetMapping("/")
   public String ping(Model model, HttpSession httpSession){
     if ((httpSession.getAttribute("name")) !=null || httpSession.getAttribute("message") != null){
